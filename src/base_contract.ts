@@ -14,8 +14,27 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-    @file index.ts
+    @file base_contract.ts
     @author Sawyer Cutler
 */
+import { Provider } from "@ethersproject/abstract-provider";
+import { Contract } from "@ethersproject/contracts";
 
-export { BaseContract } from "./base_contract";
+export interface IContractArgs {
+  address: string;
+  provider: Provider;
+  abi: any;
+}
+
+export abstract class BaseContract {
+  
+  public provider: Provider;
+  public contract: Contract;
+
+  constructor(contractArgs: IContractArgs) {
+    const { address, abi, provider } = contractArgs;
+
+    this.provider = provider;
+    this.contract = new Contract(address, abi, provider);
+  }
+}
