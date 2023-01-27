@@ -23,7 +23,6 @@
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "dev": "nodemon --watch \"./src/**/*.*\" --exect npm run build",
     "prepack": "npm run build",
-    "prepublish": "npm install && npm run build",
     "test": "jest",
     "test:coverage": "make-coverage-badge",
     "test:watch": "jest --watch"
