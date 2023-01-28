@@ -8,7 +8,15 @@
     "allowJs": true,
     "declaration": true,
     "declarationMap": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
   },
-  "files": ["../src/index.ts"]
+  "exclude": [
+    "./tests/*",
+    "./coverage/*"
+  ],
+  "include": [
+    "./src",
+    "./tests/*"
+  ]
 }

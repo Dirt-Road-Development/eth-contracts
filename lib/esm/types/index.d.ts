@@ -17,6 +17,5 @@
     @file index.ts
     @author Sawyer Cutler
 */
-
-export * from "./abis";
 export { BaseContract } from "./base_contract";
+//# sourceMappingURL=index.d.ts.map

@@ -14,9 +14,20 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-    @file index.ts
+    @file base_contract.ts
     @author Sawyer Cutler
 */
-
-export * from "./abis";
-export { BaseContract } from "./base_contract";
+import { Provider } from "@ethersproject/abstract-provider";
+import { Contract } from "@ethersproject/contracts";
+import { Interface } from "@ethersproject/abi";
+export interface IContractArgs {
+    address: string;
+    provider: Provider;
+    abi: Interface;
+}
+export declare abstract class BaseContract {
+    provider: Provider;
+    contract: Contract;
+    constructor(contractArgs: IContractArgs);
+}
+//# sourceMappingURL=base_contract.d.ts.map
