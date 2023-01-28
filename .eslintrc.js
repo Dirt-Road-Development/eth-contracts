@@ -8,8 +8,7 @@ module.exports = {
 		"eslint-config-prettier",
 		"plugin:prettier/recommended"
 	],
-	"overrides": [
-	],
+	"ignorePatterns": ["./src/abis/*"],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaVersion": "latest",

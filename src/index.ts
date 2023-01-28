@@ -18,4 +18,5 @@
     @author Sawyer Cutler
 */
 
+export * from "./abis";
 export { BaseContract } from "./base_contract";
