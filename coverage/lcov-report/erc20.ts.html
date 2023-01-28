@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for base_contract.ts</title>
+    <title>Code coverage report for erc20.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> base_contract.ts</h1>
+        <h1><a href="index.html">All files</a> erc20.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>49/49</span>
+                <span class='fraction'>74/74</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>49/49</span>
+                <span class='fraction'>74/74</span>
             </div>
         
             
@@ -112,7 +112,32 @@
 <a name='L47'></a><a href='#L47'>47</a>
 <a name='L48'></a><a href='#L48'>48</a>
 <a name='L49'></a><a href='#L49'>49</a>
-<a name='L50'></a><a href='#L50'>50</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -141,73 +166,123 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
-    Copyright (C) 2023 Dirt Road Development
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { BaseContract, ICoreArgs } from "./base_contract";
+import { ERC20Abi } from "./abis/erc20";
+import { BigNumber } from "@ethersproject/bignumber";
+import { Interface, Result } from "@ethersproject/abi";
 &nbsp;
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+type BlockTag = number | string;
 &nbsp;
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-&nbsp;
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
-&nbsp;
-    @file base_contract.ts
-    @author Sawyer Cutler
-*/
-import { Provider } from "@ethersproject/abstract-provider";
-import { Signer } from "@ethersproject/abstract-signer";
-import { Contract } from "@ethersproject/contracts";
-import { Interface } from "@ethersproject/abi";
-&nbsp;
-export interface ICoreArgs {
-  address: string;
-  provider: Provider | Signer;
-}
-&nbsp;
-export interface IContractArgs extends ICoreArgs {
-  abi: Interface;
-}
-&nbsp;
-export abstract class BaseContract {
-  public provider: Provider | Signer;
-  public contract: Contract;
-&nbsp;
-  constructor(contractArgs: IContractArgs) {
-    const { address, abi, provider } = contractArgs;
-&nbsp;
-    this.provider = provider;
-    this.contract = new Contract(address, abi, provider);
+export class ERC20 extends BaseContract {
+  constructor(args: ICoreArgs) {
+    super({ ...args, abi: new Interface(ERC20Abi) });
   }
 &nbsp;
-  public providerIsSigner(): void {
-    const isSigner: boolean = this.provider instanceof Signer;
-    if (!isSigner) throw new Error("Requires a Signer");
+  public async name(blockTag: BlockTag = "latest"): Promise&lt;string&gt; {
+    return await this.contract.name({
+      blockTag,
+    });
+  }
+&nbsp;
+  public async symbol(blockTag: BlockTag = "latest"): Promise&lt;string&gt; {
+    return await this.contract.symbol({
+      blockTag,
+    });
+  }
+&nbsp;
+  public async decimals(blockTag: BlockTag = "latest"): Promise&lt;number&gt; {
+    return await this.contract.decimals({
+      blockTag,
+    });
+  }
+&nbsp;
+  public async totalSupply(blockTag: BlockTag = "latest"): Promise&lt;BigNumber&gt; {
+    return await this.contract.totalSupply({
+      blockTag,
+    });
+  }
+&nbsp;
+  public async balanceOf(
+    address: string,
+    blockTag: BlockTag = "latest"
+  ): Promise&lt;BigNumber&gt; {
+    return await this.contract.balanceOf(address, {
+      blockTag,
+    });
+  }
+&nbsp;
+  public async transfer(to: string, amount: BigNumber): Promise&lt;Result&gt; {
+    this.providerIsSigner();
+    return await this.contract.transfer(to, amount);
+  }
+&nbsp;
+  public async allowance(
+    owner: string,
+    spender: string,
+    blockTag: BlockTag = "latest"
+  ): Promise&lt;BigNumber&gt; {
+    return await this.contract.allowance(owner, spender, {
+      blockTag,
+    });
+  }
+&nbsp;
+  public async approve(spender: string, amount: BigNumber): Promise&lt;Result&gt; {
+    this.providerIsSigner();
+    return await this.contract.approve(spender, amount);
+  }
+&nbsp;
+  public async transferFrom(
+    from: string,
+    to: string,
+    amount: BigNumber
+  ): Promise&lt;Result&gt; {
+    this.providerIsSigner();
+    return await this.contract.transferFrom(from, to, amount);
   }
 }
 &nbsp;</pre></td></tr></table></pre>

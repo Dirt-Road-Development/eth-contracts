@@ -25,8 +25,10 @@ describe("Base Contract Test", () => {
     expect(contract.contract.interface.functions).toEqual({});
   });
   test("Empty Provider", async () => {
-    expect(contract.provider._isProvider).toBeTruthy();
-    await expect(contract.provider.getNetwork()).rejects.toThrowError(
+    expect(contract.provider instanceof Provider).toBeTruthy();
+    const provider = contract.provider as Provider;
+    expect(provider._isProvider).toBeTruthy();
+    await expect(provider.getNetwork()).rejects.toThrowError(
       new Error(
         'could not detect network (event="noNetwork", code=NETWORK_ERROR, version=providers/5.7.2)'
       )

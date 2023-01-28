@@ -18,17 +18,21 @@
     @author Sawyer Cutler
 */
 import { Provider } from "@ethersproject/abstract-provider";
+import { Signer } from "@ethersproject/abstract-signer";
 import { Contract } from "@ethersproject/contracts";
 import { Interface } from "@ethersproject/abi";
 
-export interface IContractArgs {
+export interface ICoreArgs {
   address: string;
-  provider: Provider;
+  provider: Provider | Signer;
+}
+
+export interface IContractArgs extends ICoreArgs {
   abi: Interface;
 }
 
 export abstract class BaseContract {
-  public provider: Provider;
+  public provider: Provider | Signer;
   public contract: Contract;
 
   constructor(contractArgs: IContractArgs) {
@@ -36,5 +40,10 @@ export abstract class BaseContract {
 
     this.provider = provider;
     this.contract = new Contract(address, abi, provider);
+  }
+
+  public providerIsSigner(): void {
+    const isSigner: boolean = this.provider instanceof Signer;
+    if (!isSigner) throw new Error("Requires a Signer");
   }
 }
