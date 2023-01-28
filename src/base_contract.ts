@@ -42,7 +42,7 @@ export abstract class BaseContract {
     this.contract = new Contract(address, abi, provider);
   }
 
-  public providerIsSigner() : void {
+  public providerIsSigner(): void {
     const isSigner: boolean = this.provider instanceof Signer;
     if (!isSigner) throw new Error("Requires a Signer");
   }
