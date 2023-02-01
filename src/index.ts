@@ -20,3 +20,4 @@
 
 export * from "./abis";
 export { BaseContract } from "./base_contract";
+export { ERC20 } from "./erc20";
